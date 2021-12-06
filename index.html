@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="avengers pt-3 pb-3">
+        <div class="container">
+            <h1 class="h2 text-center">Movies catalog</h1>
+            <div class="row">
+                <div class="avengers__left-site col">
+                    <div>
+                        <form method="get" id="form_submit">
+                            <input class="form-control mb-2" type="text" placeholder="Ave" aria-label="form-control example" id="input_seven">
+                            <input class="form-control mb-2" type="text" placeholder="5" aria-label="form-control example" id="input_five">
+                        <select class="form-select mb-2" aria-label="Default select example" id="select">
+                            <option selected disabled hidden>All</option>
+                            <option value="1">Mystery</option>
+                            <option value="2">Romance</option>
+                            <option value="3">Thriller</option>
+                        </select>  
+                        <select class="form-select mb-2" aria-label="Default select example" id="select_rating">
+                            <option selected disabled hidden>Sorting</option>
+                            <option value="rating-high" id="select">Rating (high to low)</option>
+							<option value="rating-low" id="select2">Rating (low to high)</option>
+                        </select> 
+                        <button class="btn btn-lg bg-primary w-100" type="submit">Search</button> 
+                        </form>
+                    </div>
+                    <h2 class="h3 mt-5">Bookmarked movies</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            Patton Oswalt: Annihilation
+                            <div class="mt-1">
+                                <button type="submit" class="btn btn-sm bg-danger">
+                                    Remowe
+                                </button>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            The Avengers
+                            <div class="mt-1">
+                                <button type="submit" class="btn  btn-sm bg-danger">
+                                    Remowe
+                                </button>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            12 years a Slave
+                            <div class="mt-1">
+                                <button type="submit" class="btn  btn-sm bg-danger">
+                                    Remowe
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="avengers__right-site col-8">
+                    <h3 class="h5" id="search_heading">
+                        Search results: 39
+                    </h3>
+                    <div class="alert alert-primary" role="alert">
+                        Uce the form on the left to search for a movie
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-around" id="d-flex">     
+                    </div>
+                    <div class="btn-group mb-3 mt-2" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group me-2" role="group" aria-label="First group">
+                          <a class="btn btn-outline-primary d-inline-block" href="https://www.youtube.com/watch?v" target="blank">1</a>
+                          <a class="btn btn-outline-primary d-inline-block" href="https://www.youtube.com/watch?v" target="blank">2</a>
+                          <a class="btn btn-outline-primary d-inline-block" href="https://www.youtube.com/watch?v" target="blank">3</a>
+                          <a class="btn btn-outline-primary d-inline-block" href="https://www.youtube.com/watch?v" target="blank">4</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/movies.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
